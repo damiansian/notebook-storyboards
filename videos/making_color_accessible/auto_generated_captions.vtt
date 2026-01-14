@@ -1,0 +1,681 @@
+WEBVTT
+
+1
+00:00:00.135 --> 00:00:01.585
+Okay, so let's talk about something
+
+2
+00:00:01.585 --> 00:00:02.745
+we see every single day.
+
+3
+00:00:02.955 --> 00:00:06.345
+Color on our screens, the blues, the greens, the grays.
+
+4
+00:00:06.695 --> 00:00:07.945
+They aren't just there to look pretty.
+
+5
+00:00:08.135 --> 00:00:10.185
+They're fundamental language that helps us get
+
+6
+00:00:10.185 --> 00:00:12.825
+around in our digital world, they guide our eyes,
+
+7
+00:00:13.095 --> 00:00:14.265
+they signal what we can do.
+
+8
+00:00:14.725 --> 00:00:16.185
+But what happens when that language
+
+9
+00:00:16.195 --> 00:00:17.505
+isn't speaking to everyone?
+
+10
+00:00:18.485 --> 00:00:19.885
+I mean, really think about that.
+
+11
+00:00:20.235 --> 00:00:21.885
+What if the very colors that are supposed
+
+12
+00:00:21.885 --> 00:00:24.205
+to help you actually hide critical information,
+
+13
+00:00:24.675 --> 00:00:27.085
+what if they make it impossible to finish a simple task
+
+14
+00:00:27.465 --> 00:00:29.285
+or even figure out what you're supposed to be looking at?
+
+15
+00:00:29.775 --> 00:00:31.745
+Because for a huge part of the population,
+
+16
+00:00:31.885 --> 00:00:32.905
+that's their reality.
+
+17
+00:00:33.335 --> 00:00:35.425
+Poor color choices create these invisible
+
+18
+00:00:35.435 --> 00:00:36.785
+walls every single day.
+
+19
+00:00:37.205 --> 00:00:38.345
+So today we're
+
+20
+00:00:38.545 --> 00:00:40.585
+Gonna break down how we can use color, not just to
+
+21
+00:00:40.585 --> 00:00:42.425
+Be beautiful, but to be inclusive.
+
+22
+00:00:43.415 --> 00:00:45.755
+Now, it's really easy to think of this stuff as you know,
+
+23
+00:00:45.755 --> 00:00:47.035
+an edge case, something
+
+24
+00:00:47.035 --> 00:00:48.995
+that only affects a tiny number of people.
+
+25
+00:00:49.335 --> 00:00:51.675
+But the truth is it's way more common than you'd think.
+
+26
+00:00:52.335 --> 00:00:54.435
+The web Content Accessibility Guidelines
+
+27
+00:00:54.435 --> 00:00:58.315
+or WCAG, which is basically the global rule book for this,
+
+28
+00:00:58.685 --> 00:01:00.515
+tells us that about 15%
+
+29
+00:01:00.515 --> 00:01:03.435
+of working age adults have some kind of vision impairment.
+
+30
+00:01:03.695 --> 00:01:06.355
+That's a huge number of people who might be struggling
+
+31
+00:01:06.355 --> 00:01:08.875
+with designs that don't think about how color is perceived.
+
+32
+00:01:09.175 --> 00:01:10.595
+So this isn't the niche problem at all.
+
+33
+00:01:10.745 --> 00:01:13.915
+It's a mainstream design challenge. And here's
+
+34
+00:01:13.915 --> 00:01:16.515
+The thing, it's not just about permanent conditions.
+
+35
+00:01:16.845 --> 00:01:18.355
+We've all been there, right? Trying
+
+36
+00:01:18.355 --> 00:01:21.075
+to read your phone screen in bright sunlight, squinting
+
+37
+00:01:21.075 --> 00:01:23.275
+to see what's going on, or maybe you've
+
+38
+00:01:23.275 --> 00:01:25.475
+Used a low power mode that Makes everything gray scale.
+
+39
+00:01:25.935 --> 00:01:28.155
+In those moments, all of us are experiencing
+
+40
+00:01:28.155 --> 00:01:29.595
+what you could call a situational
+
+41
+00:01:29.595 --> 00:01:31.275
+Disability, where color and
+
+42
+00:01:31.715 --> 00:01:33.275
+Contrast suddenly become absolutely
+
+43
+00:01:33.555 --> 00:01:34.995
+critical. So designing for
+
+44
+00:01:34.995 --> 00:01:37.675
+Accessibility, it really Is just designing for
+
+45
+00:01:37.835 --> 00:01:38.835
+Everyone. So
+
+46
+00:01:38.835 --> 00:01:41.595
+how do we actually start breaking down these barriers?
+
+47
+00:01:42.105 --> 00:01:44.715
+Well, the first and most fundamental rule is just about
+
+48
+00:01:44.715 --> 00:01:46.995
+making sure people can read the words on the screen,
+
+49
+00:01:47.335 --> 00:01:49.555
+and it all boils down to one simple concept.
+
+50
+00:01:50.475 --> 00:01:52.295
+Contrast. Simply put,
+
+51
+00:01:53.135 --> 00:01:55.095
+Contrast is just the difference in brightness
+
+52
+00:01:55.095 --> 00:01:56.935
+between two colors next to each other,
+
+53
+00:01:57.245 --> 00:01:58.775
+like text and its background.
+
+54
+00:01:59.155 --> 00:02:01.695
+The bigger that difference, the easier it is to read.
+
+55
+00:02:01.995 --> 00:02:04.335
+You know, think black text on a white background,
+
+56
+00:02:04.555 --> 00:02:05.935
+that's maximum contrast,
+
+57
+00:02:06.235 --> 00:02:09.095
+but light gray text on a slightly lighter gray background.
+
+58
+00:02:09.315 --> 00:02:10.455
+That's where things get messy.
+
+59
+00:02:11.645 --> 00:02:13.265
+And Thankfully we don't have to guess.
+
+60
+00:02:13.355 --> 00:02:15.105
+There are super clear guidelines for
+
+61
+00:02:15.105 --> 00:02:15.825
+This. For
+
+62
+00:02:15.825 --> 00:02:18.585
+Normalized text, the standard is a contrast ratio
+
+63
+00:02:18.605 --> 00:02:20.345
+of at least 4.5 to one.
+
+64
+00:02:20.805 --> 00:02:21.985
+Now, if the text is bigger,
+
+65
+00:02:22.055 --> 00:02:25.225
+that requirement relaxes a bit down to three to one, just
+
+66
+00:02:25.225 --> 00:02:27.145
+because larger text is naturally easier to see.
+
+67
+00:02:27.635 --> 00:02:29.465
+These numbers are Pretty much our go-to
+
+68
+00:02:29.705 --> 00:02:30.825
+benchmarks for readability.
+
+69
+00:02:31.615 --> 00:02:33.705
+Just put yourself in this scenario for a second.
+
+70
+00:02:33.975 --> 00:02:34.985
+Imagine you're trying
+
+71
+00:02:34.985 --> 00:02:37.065
+to submit a really important form online,
+
+72
+00:02:37.445 --> 00:02:40.505
+and the final confirm button has text that's so faint.
+
+73
+00:02:40.685 --> 00:02:42.065
+You're not even sure what it says.
+
+74
+00:02:42.415 --> 00:02:45.785
+That feeling of frustration, of uncertainty, that is exactly
+
+75
+00:02:45.785 --> 00:02:47.945
+what poor text contrast creates,
+
+76
+00:02:48.285 --> 00:02:50.505
+and it's a barrier that's so easy to avoid.
+
+77
+00:02:51.415 --> 00:02:52.665
+Okay, so that same idea
+
+78
+00:02:52.665 --> 00:02:55.225
+of contrast leads us right into our second rule.
+
+79
+00:02:55.575 --> 00:02:58.225
+Once we can actually read the text, we need to be able
+
+80
+00:02:58.225 --> 00:03:00.685
+to see the interactive parts of a page, you know,
+
+81
+00:03:00.685 --> 00:03:03.485
+the buttons, the icons, the little input fields.
+
+82
+00:03:03.615 --> 00:03:06.125
+These are the controls that let us actually do things.
+
+83
+00:03:06.875 --> 00:03:09.415
+And just like with text, there's a clear benchmark here
+
+84
+00:03:09.715 --> 00:03:11.095
+for user interface components
+
+85
+00:03:11.155 --> 00:03:14.055
+and other graphics like say the border around a text box
+
+86
+00:03:14.115 --> 00:03:15.295
+or an important icon.
+
+87
+00:03:15.635 --> 00:03:18.575
+The key parts need to contrast ratio of at least three
+
+88
+00:03:18.575 --> 00:03:19.775
+to one against the background.
+
+89
+00:03:20.045 --> 00:03:21.215
+This just makes sure they don't
+
+90
+00:03:21.215 --> 00:03:22.375
+fade away and become invisible.
+
+91
+00:03:23.175 --> 00:03:25.915
+Ask yourself this, if a button doesn't have a solid color
+
+92
+00:03:26.255 --> 00:03:28.875
+and its outline is the only thing that defines its shape,
+
+93
+00:03:29.305 --> 00:03:30.835
+what happens when that outline is
+
+94
+00:03:30.855 --> 00:03:32.475
+so faint it just blends into the page?
+
+95
+00:03:32.905 --> 00:03:34.475
+Well, the button basically vanishes
+
+96
+00:03:34.895 --> 00:03:36.635
+and you can't click what you can't see.
+
+97
+00:03:36.855 --> 00:03:37.915
+That's why the contrast
+
+98
+00:03:37.915 --> 00:03:40.275
+of these elements is every bit as important as the text.
+
+99
+00:03:41.135 --> 00:03:43.515
+Now, there is one key exception to this rule.
+
+100
+00:03:43.635 --> 00:03:45.075
+I should mention, if a button
+
+101
+00:03:45.215 --> 00:03:47.755
+or a control is disabled, you know, grayed out,
+
+102
+00:03:47.755 --> 00:03:49.635
+meaning you can't interact with it anyway.
+
+103
+00:03:49.895 --> 00:03:51.995
+It doesn't have to meet these contrast rules.
+
+104
+00:03:52.415 --> 00:03:55.435
+The focus is all about making sure the things people can
+
+105
+00:03:55.495 --> 00:03:56.715
+use are clearly visible.
+
+106
+00:03:57.295 --> 00:03:59.755
+And this brings us to our third and final rule,
+
+107
+00:03:59.775 --> 00:04:00.915
+and it's a really big one.
+
+108
+00:04:01.225 --> 00:04:03.675
+It's the idea that color, as powerful as it is,
+
+109
+00:04:03.975 --> 00:04:07.195
+should never ever be the only way you're communicating an
+
+110
+00:04:07.195 --> 00:04:08.275
+important piece of information.
+
+111
+00:04:08.605 --> 00:04:09.795
+Color always needs a partner.
+
+112
+00:04:10.645 --> 00:04:12.585
+The solution here is so simple and elegant.
+
+113
+00:04:13.125 --> 00:04:16.825
+By all means, use color green for success, red for an error.
+
+114
+00:04:16.885 --> 00:04:18.265
+That's intuitive, it's great,
+
+115
+00:04:18.725 --> 00:04:20.945
+but the trick is to always pair that color
+
+116
+00:04:20.945 --> 00:04:23.585
+with a second signal that doesn't rely on vision at all.
+
+117
+00:04:23.965 --> 00:04:26.065
+So a green success message should also have
+
+118
+00:04:26.125 --> 00:04:27.465
+say a check mark icon.
+
+119
+00:04:27.685 --> 00:04:29.545
+An error message needs more than just being red,
+
+120
+00:04:30.445 --> 00:04:32.095
+and we've got a whole toolbox
+
+121
+00:04:32.095 --> 00:04:34.095
+of these non-color signals to choose from.
+
+122
+00:04:34.705 --> 00:04:37.695
+Icons are probably the most common simple text labels like
+
+123
+00:04:37.695 --> 00:04:39.535
+error or required work perfectly
+
+124
+00:04:39.795 --> 00:04:42.335
+and underline on a link, a pattern, fill on a chart,
+
+125
+00:04:42.395 --> 00:04:43.655
+or even using a different shape.
+
+126
+00:04:43.825 --> 00:04:46.455
+These can all do the job of reinforcing the message so
+
+127
+00:04:46.455 --> 00:04:48.815
+that it gets through to absolutely everyone, no matter
+
+128
+00:04:48.835 --> 00:04:49.935
+how they perceive color.
+
+129
+00:04:50.915 --> 00:04:52.815
+And this is where it gets super practical.
+
+130
+00:04:53.245 --> 00:04:54.535
+Just picture a signup form
+
+131
+00:04:54.535 --> 00:04:57.055
+where the required fields are only marked with red text.
+
+132
+00:04:57.435 --> 00:04:59.335
+If you have a type of colorblindness where red
+
+133
+00:04:59.335 --> 00:05:00.735
+and black look pretty much the same,
+
+134
+00:05:01.005 --> 00:05:03.295
+that form is literally impossible to complete.
+
+135
+00:05:03.475 --> 00:05:04.415
+You have no way of knowing
+
+136
+00:05:04.415 --> 00:05:05.775
+what's required and what's optional.
+
+137
+00:05:06.175 --> 00:05:09.695
+A simple asterisk right next to the red text problem solved.
+
+138
+00:05:10.905 --> 00:05:12.565
+So after going through all that,
+
+139
+00:05:12.835 --> 00:05:15.525
+what are the big ideas we should really walk away with?
+
+140
+00:05:15.985 --> 00:05:19.685
+It all boils down to three simple foundational principles
+
+141
+00:05:19.785 --> 00:05:20.805
+for designing with color.
+
+142
+00:05:21.585 --> 00:05:23.765
+So let's just quickly recap the three key rules.
+
+143
+00:05:24.055 --> 00:05:27.565
+First, make sure your text is readable with enough contrast.
+
+144
+00:05:27.785 --> 00:05:29.325
+Second, make sure your buttons
+
+145
+00:05:29.325 --> 00:05:31.765
+and controls are visible also with enough contrast.
+
+146
+00:05:32.185 --> 00:05:34.965
+And third, never ever rely on color alone
+
+147
+00:05:34.965 --> 00:05:35.965
+to get a message across.
+
+148
+00:05:36.185 --> 00:05:38.285
+Always give it a helping hand with an icon
+
+149
+00:05:38.305 --> 00:05:39.805
+or a label or an underline.
+
+150
+00:05:40.575 --> 00:05:42.755
+And you know, these aren't just technical check boxes.
+
+151
+00:05:42.815 --> 00:05:43.915
+You have to tick off a list.
+
+152
+00:05:44.105 --> 00:05:45.795
+This is really a shift in mindset.
+
+153
+00:05:46.265 --> 00:05:48.875
+Following these guidelines is an act of empathy.
+
+154
+00:05:48.985 --> 00:05:51.155
+It's about recognizing that people experience the world
+
+155
+00:05:51.155 --> 00:05:53.275
+differently and then making a conscious choice
+
+156
+00:05:53.335 --> 00:05:54.795
+to include them in the digital
+
+157
+00:05:54.795 --> 00:05:56.835
+spaces that we're all building. And
+
+158
+00:05:56.835 --> 00:05:58.205
+That's really the amazing part.
+
+159
+00:05:58.355 --> 00:06:00.285
+None of these rules are crazy complex.
+
+160
+00:06:00.675 --> 00:06:02.565
+They're simple, thoughtful choices
+
+161
+00:06:02.955 --> 00:06:05.885
+that when you make them consistently have this massive
+
+162
+00:06:06.445 --> 00:06:09.245
+positive impact, they tear down those invisible barriers
+
+163
+00:06:09.545 --> 00:06:10.925
+and help us build a digital world
+
+164
+00:06:10.925 --> 00:06:12.565
+that is genuinely open to everyone.
+
+165
+00:06:13.375 --> 00:06:15.875
+So I'll just leave you with this final thought to chew on.
+
+166
+00:06:16.185 --> 00:06:18.755
+What would it feel like to browse a web where you never had
+
+167
+00:06:18.755 --> 00:06:20.435
+to wonder if you were missing something important?
+
+168
+00:06:20.935 --> 00:06:23.715
+How would our digital world actually change if every single
+
+169
+00:06:23.715 --> 00:06:26.235
+piece of it was built for everyone right from the very
+
+170
+00:06:26.235 --> 00:06:26.515
+beginning.
