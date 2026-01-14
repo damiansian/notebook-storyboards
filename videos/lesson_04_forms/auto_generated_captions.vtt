@@ -1,0 +1,565 @@
+WEBVTT
+
+1
+00:00:00.375 --> 00:00:00.965
+Let's be real.
+
+2
+00:00:01.185 --> 00:00:02.885
+We have all been there.
+
+3
+00:00:03.065 --> 00:00:04.685
+You're filling out some form online
+
+4
+00:00:04.865 --> 00:00:06.845
+and suddenly it just breaks
+
+5
+00:00:07.465 --> 00:00:09.365
+and it's more than just a little annoying, right?
+
+6
+00:00:09.555 --> 00:00:12.325
+It's usually a sign of a really poorly designed system.
+
+7
+00:00:12.785 --> 00:00:14.765
+So in this explainer, we're gonna break down how
+
+8
+00:00:14.765 --> 00:00:17.605
+to build way better forms that actually work for everyone.
+
+9
+00:00:18.345 --> 00:00:20.615
+Think about it. You find the perfect thing online,
+
+10
+00:00:20.875 --> 00:00:22.575
+you're excited, you're ready to buy.
+
+11
+00:00:22.795 --> 00:00:25.975
+You head to the checkout, and then you run into the form.
+
+12
+00:00:26.395 --> 00:00:28.055
+You start typing, something goes wrong
+
+13
+00:00:28.115 --> 00:00:29.335
+and you just, you give up.
+
+14
+00:00:29.505 --> 00:00:31.455
+We've all done it. It is so frustrating,
+
+15
+00:00:31.675 --> 00:00:33.775
+and it usually starts with a useless little message like
+
+16
+00:00:33.775 --> 00:00:35.165
+this error.
+
+17
+00:00:35.545 --> 00:00:38.325
+That's it. Just error. What does that even mean?
+
+18
+00:00:38.475 --> 00:00:40.485
+What did I do wrong? How do I fix it?
+
+19
+00:00:41.225 --> 00:00:45.085
+Or what about this classic invalid? Invalid what?
+
+20
+00:00:45.385 --> 00:00:48.165
+My name isn't invalid. My email address is perfectly valid.
+
+21
+00:00:48.215 --> 00:00:51.395
+Thank you very much. And oh, my personal favorite,
+
+22
+00:00:51.625 --> 00:00:52.955
+something went wrong.
+
+23
+00:00:53.295 --> 00:00:55.435
+You think this kind of vague,
+
+24
+00:00:55.565 --> 00:00:58.915
+completely unhelpful feedback isn't just a minor thing.
+
+25
+00:00:59.455 --> 00:01:02.635
+It is a symptom of a much, much bigger problem.
+
+26
+00:01:03.935 --> 00:01:06.395
+And this is the crucial point right here.
+
+27
+00:01:07.035 --> 00:01:10.355
+A bad form isn't just inconvenient, it's a dead end.
+
+28
+00:01:10.775 --> 00:01:13.955
+It literally stops people from signing up, from buying,
+
+29
+00:01:14.065 --> 00:01:15.115
+from connecting with you.
+
+30
+00:01:15.575 --> 00:01:17.515
+It completely blocks them from using
+
+31
+00:01:17.515 --> 00:01:18.555
+your product or service.
+
+32
+00:01:19.825 --> 00:01:21.665
+A poorly designed form, well,
+
+33
+00:01:21.925 --> 00:01:25.145
+it basically acts like an invisible wall for a lot of us.
+
+34
+00:01:25.295 --> 00:01:26.785
+It's just really frustrating.
+
+35
+00:01:27.205 --> 00:01:30.065
+But you know, for someone using assistive technology like a
+
+36
+00:01:30.065 --> 00:01:32.785
+screen reader or maybe someone with a cognitive disability,
+
+37
+00:01:33.095 --> 00:01:36.025
+that wall can be totally impossible to get past.
+
+38
+00:01:36.555 --> 00:01:38.865
+Let's look at one of the most common bricks in that wall.
+
+39
+00:01:39.765 --> 00:01:41.575
+Okay? You see this all the time.
+
+40
+00:01:42.005 --> 00:01:43.575
+This is a perfect example of
+
+41
+00:01:43.575 --> 00:01:45.495
+what we call the placeholder problem.
+
+42
+00:01:46.195 --> 00:01:48.535
+See how the field has that faint text inside it
+
+43
+00:01:48.535 --> 00:01:51.455
+that says first name, you click on it, you start to type
+
+44
+00:01:51.595 --> 00:01:53.495
+and poof, the label is gone.
+
+45
+00:01:54.075 --> 00:01:56.015
+Now what if you get distracted for a second?
+
+46
+00:01:56.315 --> 00:01:59.015
+You look back at the screen, what was this field for?
+
+47
+00:01:59.015 --> 00:02:01.255
+Again, this is exactly why.
+
+48
+00:02:01.425 --> 00:02:02.775
+Using that placeholder text
+
+49
+00:02:02.835 --> 00:02:05.455
+as your only label is such a terrible practice.
+
+50
+00:02:05.795 --> 00:02:08.095
+It vanishes, which means you lose all context.
+
+51
+00:02:08.525 --> 00:02:11.455
+This forces your brain to work harder trying to remember
+
+52
+00:02:11.455 --> 00:02:12.895
+what you were supposed to type there,
+
+53
+00:02:13.195 --> 00:02:15.655
+and it makes it almost impossible to quickly scan
+
+54
+00:02:15.655 --> 00:02:17.655
+and double check your work before you hit submit.
+
+55
+00:02:17.925 --> 00:02:20.135
+They just aren't real persistent labels.
+
+56
+00:02:20.955 --> 00:02:24.055
+So how do we tear down this invisible wall?
+
+57
+00:02:24.445 --> 00:02:26.455
+Well, the good news is it's not nearly
+
+58
+00:02:26.475 --> 00:02:27.935
+as complicated as it sounds.
+
+59
+00:02:28.305 --> 00:02:31.935
+There are really three fundamental keys to unlocking forms
+
+60
+00:02:31.935 --> 00:02:34.975
+that are accessible and just way more user friendly.
+
+61
+00:02:35.675 --> 00:02:36.735
+And here they are.
+
+62
+00:02:36.995 --> 00:02:40.175
+It all comes down to persistent labels, helpful errors,
+
+63
+00:02:40.355 --> 00:02:41.575
+and smart auto complete.
+
+64
+00:02:41.925 --> 00:02:43.855
+Seriously. If you get these three things right,
+
+65
+00:02:44.155 --> 00:02:45.975
+you are well on your way to creating a form
+
+66
+00:02:45.975 --> 00:02:47.615
+that actually works for everyone.
+
+67
+00:02:48.035 --> 00:02:52.575
+So let's break 'em down one by one. Okay, first up, labels.
+
+68
+00:02:53.195 --> 00:02:55.055
+The best way to think about a label is like
+
+69
+00:02:55.215 --> 00:02:56.375
+a permanent guidepost.
+
+70
+00:02:56.915 --> 00:02:58.775
+It should always, always be
+
+71
+00:02:58.775 --> 00:03:01.445
+There telling the user exactly what information they need
+
+72
+00:03:01.445 --> 00:03:03.685
+to put in that specific field no matter what.
+
+73
+00:03:04.555 --> 00:03:05.815
+So what makes a label great?
+
+74
+00:03:06.245 --> 00:03:09.135
+Well, it's always visible and never disappears,
+
+75
+00:03:09.715 --> 00:03:12.655
+and it's programmatically associated with its input.
+
+76
+00:03:13.035 --> 00:03:15.535
+Now that sounds super technical, but it's really simple.
+
+77
+00:03:16.075 --> 00:03:18.175
+It just means the code connects the label
+
+78
+00:03:18.175 --> 00:03:19.535
+text to the input box.
+
+79
+00:03:20.045 --> 00:03:23.615
+That way a screen reader can announce email, text input.
+
+80
+00:03:24.245 --> 00:03:26.095
+That connection is invisible to most of us,
+
+81
+00:03:26.355 --> 00:03:28.535
+but it is absolutely critical for accessibility.
+
+82
+00:03:28.965 --> 00:03:31.055
+Alright, next up errors.
+
+83
+00:03:31.515 --> 00:03:34.295
+We have got to stop thinking of error messages as a way
+
+84
+00:03:34.295 --> 00:03:35.775
+to shout you failed
+
+85
+00:03:36.115 --> 00:03:39.055
+and start thinking of them as a helpful hint to say,
+
+86
+00:03:39.315 --> 00:03:40.615
+Hey, here's how to succeed.
+
+87
+00:03:41.195 --> 00:03:44.695
+And this slide just shows the difference so perfectly.
+
+88
+00:03:45.155 --> 00:03:47.495
+On the left, you get invalid email,
+
+89
+00:03:47.705 --> 00:03:49.095
+which is totally useless,
+
+90
+00:03:49.395 --> 00:03:53.015
+but look at the right email must include at and a domain.
+
+91
+00:03:53.475 --> 00:03:56.735
+Ah, okay, now I know exactly what I need to do to fix it.
+
+92
+00:03:57.115 --> 00:03:59.775
+See, one is a wall, the other is a signpost.
+
+93
+00:04:00.795 --> 00:04:03.355
+A truly great error message does three simple things.
+
+94
+00:04:03.815 --> 00:04:05.995
+One, it clearly identifies what went wrong.
+
+95
+00:04:06.295 --> 00:04:07.995
+Two, it suggests how to fix it.
+
+96
+00:04:08.295 --> 00:04:10.715
+And three, it uses a clear visual cue,
+
+97
+00:04:10.865 --> 00:04:13.515
+like an icon in some text, not just a red border
+
+98
+00:04:13.515 --> 00:04:15.835
+that someone who's colorblind might not even be able to see.
+
+99
+00:04:16.875 --> 00:04:19.535
+Our third and final key is auto complete.
+
+100
+00:04:19.915 --> 00:04:21.615
+Now, this is the smart assistant
+
+101
+00:04:21.615 --> 00:04:23.335
+that makes filling out forms faster
+
+102
+00:04:23.555 --> 00:04:24.935
+and easier for all of us,
+
+103
+00:04:25.195 --> 00:04:27.535
+but it's especially vital for users with motor
+
+104
+00:04:27.595 --> 00:04:28.895
+or cognitive disabilities.
+
+105
+00:04:29.785 --> 00:04:31.365
+You know that magical moment, right?
+
+106
+00:04:31.365 --> 00:04:33.965
+When you click on the first line of an address field
+
+107
+00:04:34.145 --> 00:04:35.685
+and your browser just pops up
+
+108
+00:04:35.685 --> 00:04:37.565
+and offers to fill in the entire thing for you?
+
+109
+00:04:37.825 --> 00:04:40.485
+That's not magic. That's just really good design.
+
+110
+00:04:41.105 --> 00:04:44.085
+So how does that work? Well, behind the scenes, a designer
+
+111
+00:04:44.145 --> 00:04:46.045
+or developer adds a simple little tag,
+
+112
+00:04:46.045 --> 00:04:48.405
+something like auto complete equals street address.
+
+113
+00:04:48.915 --> 00:04:51.365
+This tag tells the browser exactly what kind
+
+114
+00:04:51.365 --> 00:04:52.845
+of information the field is expecting,
+
+115
+00:04:53.145 --> 00:04:54.165
+and that allows the browser
+
+116
+00:04:54.505 --> 00:04:56.325
+or even a password manager to give you
+
+117
+00:04:56.325 --> 00:04:58.565
+that helpful time saving autofill suggestion.
+
+118
+00:04:59.265 --> 00:05:01.085
+And here is the real takeaway.
+
+119
+00:05:01.805 --> 00:05:04.125
+Deciding which fields get an auto complete tag isn't
+
+120
+00:05:04.125 --> 00:05:05.165
+just some engineering task.
+
+121
+00:05:05.465 --> 00:05:07.525
+It is a crucial design decision.
+
+122
+00:05:08.155 --> 00:05:09.485
+It's about you, the creator,
+
+123
+00:05:09.795 --> 00:05:11.965
+intentionally designing a lower effort,
+
+124
+00:05:12.155 --> 00:05:13.845
+more accessible experience for your users.
+
+125
+00:05:14.945 --> 00:05:17.365
+So when you put all three of these keys together,
+
+126
+00:05:17.655 --> 00:05:19.605
+persistent labels, helpful errors,
+
+127
+00:05:19.605 --> 00:05:20.845
+and smart auto complete,
+
+128
+00:05:21.185 --> 00:05:23.085
+you stop building those invisible walls
+
+129
+00:05:23.385 --> 00:05:26.845
+and instead you start designing inclusive digital doorways.
+
+130
+00:05:27.905 --> 00:05:31.265
+Ultimately, that's what this is all about, inclusive design.
+
+131
+00:05:31.535 --> 00:05:32.865
+It's not some niche topic.
+
+132
+00:05:33.375 --> 00:05:34.545
+It's the core practice
+
+133
+00:05:34.545 --> 00:05:36.665
+of making sure the digital world is open
+
+134
+00:05:36.725 --> 00:05:39.105
+and usable for every single person, no matter
+
+135
+00:05:39.105 --> 00:05:41.065
+what their physical or cognitive abilities are.
+
+136
+00:05:41.685 --> 00:05:42.945
+So I'll leave you with this question.
+
+137
+00:05:43.205 --> 00:05:44.905
+The next time you design or build
+
+138
+00:05:44.925 --> 00:05:47.465
+or even just fill out a form, ask yourself,
+
+139
+00:05:47.765 --> 00:05:49.905
+is this thing a barrier that's shedding people out
+
+140
+00:05:50.125 --> 00:05:51.865
+or is it a welcome mat inviting them in?
+
+141
+00:05:51.965 --> 00:05:52.945
+Thanks for joining us.
