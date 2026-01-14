@@ -2,6 +2,8 @@
 
 This repository processes videos to generate visual storyboards with captions. It is designed to be hosted on GitHub Pages.
 
+**Live Site:** [https://damiansian.github.io/notebook-storyboards/](https://damiansian.github.io/notebook-storyboards/)
+
 ## Project Structure
 
 ```
