@@ -162,7 +162,7 @@ def generate_html(scenes, output_html):
         html_content += f"""
         <div class="scene">
             <div class="timestamp">Time: {time_display}</div>
-            <img src="frames/{scene['img']}" alt="Scene at {time_display}">
+            <img src="{scene['img']}" alt="Scene at {time_display}">
             <div class="captions">{caption_text}</div>
         </div>
         """
