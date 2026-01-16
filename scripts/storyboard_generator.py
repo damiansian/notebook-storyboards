@@ -3,18 +3,11 @@ import webvtt
 import os
 import shutil
 from datetime import timedelta
+import datetime
 
-def time_str_to_seconds(time_str):
-    """Converts a VTT timestamp string to seconds."""
-    h, m, s = time_str.split(':')
-    s, ms = s.split('.')
-    return int(h) * 3600 + int(m) * 60 + int(s) + int(ms) / 1000.0
-
-def format_timestamp(seconds):
-    """Formats seconds to HH:MM:SS string."""
-    td = timedelta(seconds=seconds)
-    # Remove microseconds for cleaner display
-    return str(td).split('.')[0]
+import argparse
+import asyncio
+import edge_tts
 
 def extract_key_frames(video_path, output_dir, threshold=0.01):
     """
@@ -96,49 +89,74 @@ def extract_key_frames(video_path, output_dir, threshold=0.01):
             # Update reference frame strictly to the new scene
             prev_frame_gray = curr_frame_gray
             
-        # Optional: update prev_frame continuously to track slow drift? 
-        # For slides, "cuts" are sudden. We want to compare against the *last saved state* 
-        # to know if we have moved away from it.
-        # BUT transitions (fades) might confuse this.
-        # Let's comparison against `prev_frame_gray` which we ONLY update when we detect a scene.
-        # This ensures that if we have a Slide A, and small elements appear one by one, 
-        # we trigger a new scene when enough difference accumulates from Slide A.
-        # Actually, standard scene detection usually compares adjacent frames.
-        # Let's compare to the *last saved scene frame* to be sure we are capturing distinct states.
-        
-        # Correction: If we compare to the last scene frame, we might miss a sequence of 
-        # Slide A -> Slide B -> Slide A. (Difference would go up then down).
-        # Actually, comparing to the *immediately previous* frame is correct for CUT detection.
-        # Comparing to *last saved* is correct for "Keyframe" detection (significant change from last capture).
-        # Since user wants "screens", "Keyframe" logic is better.
-        
     cap.release()
     return scenes
 
 def process_vtt(vtt_path, scenes):
-    """Associates captions with scenes based on time."""
-    captions = webvtt.read(vtt_path)
-    
-    # Helper to find which scene a caption belongs to.
-    # A caption belongs to the latest scene that started before the caption starts.
-    
-    current_scene_idx = 0
-    
-    for caption in captions:
-        start_seconds = time_str_to_seconds(caption.start)
-        text = caption.text.strip().replace('\n', ' ')
-        
-        # Advance scene index if the next scene started before this caption
-        # We want to find the scene where: scene.time <= caption.start < next_scene.time
-        while (current_scene_idx + 1 < len(scenes) and 
-               scenes[current_scene_idx + 1]['time'] <= start_seconds):
-            current_scene_idx += 1
-            
-        scenes[current_scene_idx]['captions'].append(text)
+    """
+    Parses VTT and assigns captions to the correct scene.
+    A caption starts in a scene if its start time >= scene start time.
+    Actually, we want to accumulate all captions that occur AFTER scene X starts 
+    and BEFORE scene X+1 starts.
+    """
+    try:
+        captions = webvtt.read(vtt_path)
+    except Exception as e:
+        print(f"Error reading VTT: {e}")
+        return scenes
 
+    # Add an 'end_time' to scenes only for logic (last scene goes to infinity)
+    for i in range(len(scenes) - 1):
+        scenes[i]['end_time'] = scenes[i+1]['time']
+    scenes[-1]['end_time'] = float('inf')
+
+    for caption in captions:
+        # WebVTT start in seconds
+        start_seconds = caption.start_in_seconds
+        
+        # Find which scene this caption belongs to
+        for scene in scenes:
+            if scene['time'] <= start_seconds < scene['end_time']:
+                scene['captions'].append(caption.text)
+                break
+                
+    return scenes
+
+async def generate_audio_for_scenes(scenes, output_dir, voice="en-US-AriaNeural"):
+    """
+    Generates audio files for each scene using edge-tts.
+    """
+    print("Generating audio files...")
+    audio_dir = os.path.join(output_dir, "audio")
+    if os.path.exists(audio_dir):
+        shutil.rmtree(audio_dir)
+    os.makedirs(audio_dir)
+    
+    for i, scene in enumerate(scenes):
+        text = " ".join(scene['captions']).strip()
+        if not text:
+            scene['audio'] = None
+            continue
+            
+        # Clean text slightly if needed
+        text = text.replace('\n', ' ')
+        
+        filename = f"audio_{i:03d}.mp3"
+        filepath = os.path.join(audio_dir, filename)
+        
+        communicate = edge_tts.Communicate(text, voice)
+        await communicate.save(filepath)
+        
+        # Store relative path for HTML
+        scene['audio'] = f"assets/audio/{filename}"
+    
+    print("Audio generation complete.")
     return scenes
 
 def generate_html(scenes, output_html):
+    """
+    Generates the HTML storyboard.
+    """
     html_content = """
     <!DOCTYPE html>
     <html>
@@ -149,6 +167,7 @@ def generate_html(scenes, output_html):
             img { max-width: 100%; height: auto; border: 1px solid #ddd; }
             .timestamp { color: #666; font-size: 0.9em; margin-bottom: 5px; }
             .captions { font-size: 1.1em; line-height: 1.5; margin-top: 10px; }
+            audio { width: 100%; margin-top: 10px; }
         </style>
     </head>
     <body>
@@ -156,30 +175,37 @@ def generate_html(scenes, output_html):
     """
     
     for scene in scenes:
-        time_display = format_timestamp(scene['time'])
+        time_display = str(datetime.timedelta(seconds=int(scene['time'])))
         caption_text = " ".join(scene['captions'])
         
+        audio_html = ""
+        if scene.get('audio'):
+            audio_html = f'<audio controls src="{scene["audio"]}"></audio>'
+            
         html_content += f"""
         <div class="scene">
             <div class="timestamp">Time: {time_display}</div>
             <img src="{scene['img']}" alt="Scene at {time_display}">
             <div class="captions">{caption_text}</div>
+            {audio_html}
         </div>
         """
         
-    html_content += "</body></html>"
+    html_content += """
+    </body>
+    </html>
+    """
     
     with open(output_html, 'w') as f:
         f.write(html_content)
 
-import argparse
-
-def main():
+async def main_async():
     parser = argparse.ArgumentParser(description="Generate a storyboard from a video and VTT file.")
     parser.add_argument("video_file", help="Path to the video file")
     parser.add_argument("vtt_file", help="Path to the VTT caption file")
     parser.add_argument("--output_dir", default=".", help="Directory to save output (default: same as input)")
     parser.add_argument("--threshold", type=float, default=0.01, help="Scene detection threshold (default: 0.01)")
+    parser.add_argument("--voice", default="en-US-AriaNeural", help="Voice for TTS (default: en-US-AriaNeural)")
     
     args = parser.parse_args()
     
@@ -189,6 +215,9 @@ def main():
     
     # Ensure output directories exist
     output_frames_dir = os.path.join(output_base_dir, "assets", "frames")
+    # Audio dir is created in generate_audio_for_scenes but we pass the assets root
+    output_assets_dir = os.path.join(output_base_dir, "assets")
+    
     if not os.path.exists(output_frames_dir):
         os.makedirs(output_frames_dir)
         
@@ -206,14 +235,19 @@ def main():
     scenes = process_vtt(vtt_file, scenes)
     
     # Update image paths in scenes to be relative for the HTML
-    # The HTML is in output_base_dir. Frames are in output_base_dir/assets/frames
-    # So relative path is assets/frames/filename
     for scene in scenes:
         scene['img'] = f"assets/frames/{os.path.basename(scene['img'])}"
+        
+    print("Generating Audio...")
+    # Pass output_assets_dir because generate_audio_for_scenes creates "audio" inside it
+    scenes = await generate_audio_for_scenes(scenes, output_assets_dir, voice=args.voice)
     
     print("Generating HTML...")
     generate_html(scenes, output_html)
     print(f"Done! Open {output_html} to view the storyboard.")
+
+def main():
+    asyncio.run(main_async())
 
 if __name__ == "__main__":
     main()
