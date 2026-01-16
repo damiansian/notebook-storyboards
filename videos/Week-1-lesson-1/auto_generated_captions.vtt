@@ -1,0 +1,525 @@
+WEBVTT
+
+1
+00:00:00.395 --> 00:00:02.405
+There's a huge part of the internet that's all
+
+2
+00:00:02.405 --> 00:00:04.725
+around us affecting everything we do online,
+
+3
+00:00:05.185 --> 00:00:06.965
+but for millions and millions of people,
+
+4
+00:00:07.275 --> 00:00:08.285
+it's basically invisible.
+
+5
+00:00:09.025 --> 00:00:11.765
+I'm talking about hidden barriers, the ones that decide
+
+6
+00:00:11.785 --> 00:00:14.005
+who gets to fully participate in our digital world
+
+7
+00:00:14.265 --> 00:00:15.365
+and who gets left out.
+
+8
+00:00:15.745 --> 00:00:17.325
+So today, let's pull back the curtain.
+
+9
+00:00:18.035 --> 00:00:22.385
+Let's start with a number, 94.8%.
+
+10
+00:00:22.655 --> 00:00:25.705
+Just look at that for a second. That's a huge number.
+
+11
+00:00:25.965 --> 00:00:27.745
+You think it has to be something good, right?
+
+12
+00:00:28.445 --> 00:00:29.665
+So what do you think that could be?
+
+13
+00:00:29.945 --> 00:00:32.385
+I mean, in the world of tech, a number that high,
+
+14
+00:00:32.755 --> 00:00:36.145
+maybe it's user satisfaction, market share for some new app.
+
+15
+00:00:36.655 --> 00:00:40.765
+Well, the reality is a lot more serious. That's right.
+
+16
+00:00:41.285 --> 00:00:44.125
+A massive study found that nearly 95% of the web's,
+
+17
+00:00:44.125 --> 00:00:46.965
+most popular sites have basic accessibility failures.
+
+18
+00:00:47.375 --> 00:00:49.085
+These are flaws that create major
+
+19
+00:00:49.085 --> 00:00:50.685
+roadblocks for people with disabilities.
+
+20
+00:00:50.985 --> 00:00:54.125
+So this isn't some tiny niche problem, it's a systemic issue
+
+21
+00:00:54.125 --> 00:00:56.125
+that's baked into the very fabric of the internet.
+
+22
+00:00:57.315 --> 00:01:00.205
+Okay? So to really understand why that number is
+
+23
+00:01:00.205 --> 00:01:02.885
+so shockingly high, we gotta back up a step.
+
+24
+00:01:03.265 --> 00:01:05.925
+We have to know what we're aiming for in the first place.
+
+25
+00:01:06.465 --> 00:01:10.375
+So what exactly is digital accessibility at its core?
+
+26
+00:01:10.525 --> 00:01:12.455
+It's pretty simple. It's all about making sure
+
+27
+00:01:12.455 --> 00:01:16.015
+that our digital world, our websites, our apps can be used
+
+28
+00:01:16.015 --> 00:01:17.975
+by people with all kinds of disabilities.
+
+29
+00:01:18.315 --> 00:01:20.455
+The whole goal is to build things in a way
+
+30
+00:01:20.455 --> 00:01:23.255
+that those barriers just don't exist from the start.
+
+31
+00:01:23.955 --> 00:01:25.775
+Now, this might sound really complex,
+
+32
+00:01:26.035 --> 00:01:28.335
+but honestly, the entire philosophy
+
+33
+00:01:28.335 --> 00:01:31.055
+of accessibility rests on two foundational ideas.
+
+34
+00:01:31.555 --> 00:01:34.735
+If you can get your head around these two simple principles,
+
+35
+00:01:34.835 --> 00:01:36.215
+you'll understand the whole thing.
+
+36
+00:01:36.875 --> 00:01:40.095
+So principle one is all about embracing human diversity.
+
+37
+00:01:40.675 --> 00:01:42.695
+We just can't assume that our user can see
+
+38
+00:01:42.875 --> 00:01:45.135
+or that they can hear, or that they can use a mouse.
+
+39
+00:01:45.475 --> 00:01:46.975
+The design has to be flexible
+
+40
+00:01:46.975 --> 00:01:49.215
+and work for a whole spectrum of human abilities.
+
+41
+00:01:50.065 --> 00:01:52.605
+And the second principle is all about technology.
+
+42
+00:01:53.145 --> 00:01:55.365
+You see, many people with disabilities use special
+
+43
+00:01:55.375 --> 00:01:56.525
+tools to get around the web.
+
+44
+00:01:56.545 --> 00:01:58.765
+Things like screen readers that read text out loud
+
+45
+00:01:58.905 --> 00:02:00.285
+or voice control software.
+
+46
+00:02:00.845 --> 00:02:03.885
+A website has to be built to play nice with these tools, not
+
+47
+00:02:03.885 --> 00:02:05.125
+to put up a wall and block them.
+
+48
+00:02:05.785 --> 00:02:08.395
+Alright, so those are the two core ideas.
+
+49
+00:02:08.935 --> 00:02:10.115
+Now let's take a look at
+
+50
+00:02:10.115 --> 00:02:12.235
+what happens in the real world when these
+
+51
+00:02:12.235 --> 00:02:13.275
+principles get ignored.
+
+52
+00:02:13.605 --> 00:02:15.515
+Let's see some of these barriers in action.
+
+53
+00:02:16.485 --> 00:02:20.195
+First up, let's talk about a super common mistake using
+
+54
+00:02:20.245 --> 00:02:22.995
+color as the only way to give someone information.
+
+55
+00:02:23.925 --> 00:02:24.975
+Okay, picture this,
+
+56
+00:02:25.035 --> 00:02:27.255
+you're filling out a form online and you make a mistake.
+
+57
+00:02:27.475 --> 00:02:29.855
+The little box turns red, simple enough,
+
+58
+00:02:30.275 --> 00:02:32.255
+but what if you're colorblind for you?
+
+59
+00:02:32.255 --> 00:02:34.895
+That red box might look exactly the same as all the others,
+
+60
+00:02:35.275 --> 00:02:37.975
+and just like that, you have no idea where the air is.
+
+61
+00:02:38.075 --> 00:02:39.735
+The information is totally lost,
+
+62
+00:02:40.885 --> 00:02:44.145
+and boom, that is a classic violation of principle one.
+
+63
+00:02:44.325 --> 00:02:45.865
+The design is completely dependent
+
+64
+00:02:45.865 --> 00:02:47.025
+on a single human ability.
+
+65
+00:02:47.205 --> 00:02:49.185
+In this case, the ability to see
+
+66
+00:02:49.205 --> 00:02:50.905
+and distinguish specific colors.
+
+67
+00:02:51.705 --> 00:02:54.755
+Alright? Another huge one you'll find absolutely everywhere
+
+68
+00:02:54.855 --> 00:02:57.835
+is images or icons that are missing a text description.
+
+69
+00:02:58.405 --> 00:03:00.945
+Think about an icon, maybe a little cloud
+
+70
+00:03:00.945 --> 00:03:02.785
+that tells you your file has been saved.
+
+71
+00:03:03.325 --> 00:03:04.825
+If you can see it, it's obvious.
+
+72
+00:03:05.245 --> 00:03:06.945
+But for someone using a screen reader,
+
+73
+00:03:07.205 --> 00:03:10.025
+if there's no text alternative coded in, well,
+
+74
+00:03:10.205 --> 00:03:11.905
+the screen reader has nothing to announce.
+
+75
+00:03:12.165 --> 00:03:13.785
+The icon and its entire meaning
+
+76
+00:03:13.925 --> 00:03:15.065
+are just completely invisible.
+
+77
+00:03:15.685 --> 00:03:18.305
+And here's what's so important about this example.
+
+78
+00:03:18.925 --> 00:03:21.265
+One little mistake can break both of our rules.
+
+79
+00:03:21.765 --> 00:03:24.425
+It relies only on site, which violates principle one,
+
+80
+00:03:24.605 --> 00:03:26.305
+and it actively blocks the screen reader,
+
+81
+00:03:26.305 --> 00:03:27.665
+which violates principle two.
+
+82
+00:03:28.525 --> 00:03:31.255
+Okay, for our last example, let's
+
+83
+00:03:31.255 --> 00:03:33.495
+Talk about how we physically Interact with a website.
+
+84
+00:03:34.365 --> 00:03:35.575
+Have you ever tried to get
+
+85
+00:03:35.575 --> 00:03:38.815
+around a website using only the tab key on your keyboard?
+
+86
+00:03:39.195 --> 00:03:41.495
+For many people, that's their main way of navigating,
+
+87
+00:03:41.795 --> 00:03:43.255
+but some sites have links
+
+88
+00:03:43.255 --> 00:03:45.255
+or buttons that are just impossible
+
+89
+00:03:45.255 --> 00:03:46.335
+to get to without a mouse.
+
+90
+00:03:46.715 --> 00:03:49.735
+If you can't use a mouse for whatever reason, those parts
+
+91
+00:03:49.735 --> 00:03:51.615
+of the site are completely off limits to you.
+
+92
+00:03:52.495 --> 00:03:55.915
+And here we go again. We see both principles being broken.
+
+93
+00:03:56.495 --> 00:03:59.235
+The design makes a huge assumption about the physical
+
+94
+00:03:59.235 --> 00:04:00.435
+ability to use a mouse.
+
+95
+00:04:00.775 --> 00:04:03.515
+And in doing so, it blocks keyboard navigation
+
+96
+00:04:03.615 --> 00:04:06.715
+and other technologies like voice control that rely on
+
+97
+00:04:06.715 --> 00:04:08.155
+that same fundamental structure.
+
+98
+00:04:09.015 --> 00:04:10.595
+Now, these examples might seem like
+
+99
+00:04:10.595 --> 00:04:11.875
+small technical glitches,
+
+100
+00:04:12.215 --> 00:04:14.235
+But when you multiply them across millions
+
+101
+00:04:14.235 --> 00:04:16.835
+Of websites, the impact is absolutely enormous.
+
+102
+00:04:17.215 --> 00:04:18.875
+And that's really why this matters so much.
+
+103
+00:04:20.095 --> 00:04:21.695
+Remember that shocking number from the beginning?
+
+104
+00:04:22.085 --> 00:04:24.175
+It's not from one single giant problem.
+
+105
+00:04:24.765 --> 00:04:26.015
+It's the result of millions
+
+106
+00:04:26.015 --> 00:04:28.495
+of these seemingly small barriers relying on color
+
+107
+00:04:28.715 --> 00:04:30.935
+for getting text descriptions, forcing mouse use,
+
+108
+00:04:31.275 --> 00:04:34.655
+all adding up to a web that is overwhelmingly inaccessible.
+
+109
+00:04:35.395 --> 00:04:37.175
+And if we actually look at the data,
+
+110
+00:04:37.515 --> 00:04:41.415
+we can see the biggest culprits low contrast text is the
+
+111
+00:04:41.415 --> 00:04:44.895
+number one issue that's on almost 80% of pages,
+
+112
+00:04:44.955 --> 00:04:47.535
+making them hard to read and look what's right behind it.
+
+113
+00:04:47.645 --> 00:04:49.735
+Missing alternative text for images.
+
+114
+00:04:50.155 --> 00:04:53.535
+The exact problem we just talked about on more than half
+
+115
+00:04:53.535 --> 00:04:54.535
+of all homepages,
+
+116
+00:04:54.995 --> 00:04:58.135
+the list just goes on showing the same fundamental mistakes
+
+117
+00:04:58.445 --> 00:04:59.975
+over and over again.
+
+118
+00:05:00.675 --> 00:05:02.775
+But you know, this isn't just a technical issue about
+
+119
+00:05:02.845 --> 00:05:04.495
+code, it's a human issue.
+
+120
+00:05:04.955 --> 00:05:06.695
+And this quote really puts it all into perspective.
+
+121
+00:05:07.205 --> 00:05:10.015
+When the largest minority group in the entire world is
+
+122
+00:05:10.015 --> 00:05:12.175
+systemically excluded from the most important tool
+
+123
+00:05:12.175 --> 00:05:15.495
+of modern life, well that's a massive problem of equity.
+
+124
+00:05:16.075 --> 00:05:17.215
+And that really leaves all of us
+
+125
+00:05:17.215 --> 00:05:18.935
+with a critical question to think about.
+
+126
+00:05:19.665 --> 00:05:21.895
+We're all architects of this digital world,
+
+127
+00:05:21.895 --> 00:05:24.535
+whether we build websites, create content, or just use them.
+
+128
+00:05:24.955 --> 00:05:27.855
+So we have to ask ourselves, are we building open public
+
+129
+00:05:28.045 --> 00:05:29.095
+squares for everyone?
+
+130
+00:05:29.475 --> 00:05:32.375
+Or are we building walled gardens with gates that only some
+
+131
+00:05:32.375 --> 00:05:32.975
+of us can open.
